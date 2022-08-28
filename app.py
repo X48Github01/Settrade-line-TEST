@@ -1,6 +1,5 @@
 import flask
 import requests
-import Investor
 import settrade.openapi
 import time
 import sync
