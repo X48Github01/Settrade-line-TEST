@@ -5,11 +5,12 @@ import Investor
 import settrade.openapi
 import time
 import sync
+import linebot
 
 from flask import Flask, request, abort
 from settrade.openapi import Investor
 
-from linebot import (CLcs
+from linebot import (
     LineBotApi, WebhookHandler
 )
 from linebot.exceptions import (
