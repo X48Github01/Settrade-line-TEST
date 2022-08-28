@@ -25,7 +25,7 @@ app_secret = "BIhomc1bJN4XqCOyIW+OgVK9SqK4WwSJrhKqQjnGORA"
 app_code = "SANDBOX"
 broker_id = "SANDBOX"
 is_auto_queue = False
-settrade.openapi.Investor(app_id, app_secret, broker_id, app_code, is_auto_queue)
+settrade.openapi.Investor(app_id, [app_secret], broker_id, app_code, is_auto_queue)
 
 app = Flask(__name__)
 
