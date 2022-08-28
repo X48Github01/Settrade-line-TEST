@@ -11,14 +11,20 @@ from linebot.models import (
     MessageEvent, PostbackEvent, TextMessage, TextSendMessage, FlexSendMessage, QuickReply, QuickReplyButton, MessageAction, PostbackAction
 )
 
+[STT-OPENAPI-AUTH]
+app-id = "MDQfX4OjSGxTPqa"
+app-secret = "BIhomc1bJN4XqCOyIW+OgVK9SqK4WwSJrhKqQjnGORA"
+app-code = "SANDBOX"
+broker-id = "SANDBOX"
+
 app = Flask(__name__)
 
 lineaccesstoken = 'g3PgXzHxpK4ftUNiS4owBLoCfYd+QqQO5Tu8Ne1nuadrHOUDWRyDg2vtrtv0NcwTVODlumGnQg4d7Z9bbTnWNopm+qG4W1sQ4lak8UImYc8lLAljuO8AY5OIv2ZMuvRzNxuWPVsoUWrcV4rqdSU65wdB04t89/1O/w1cDnyilFU='
 line_bot_api = LineBotApi(lineaccesstoken)
 handler = WebhookHandler('314a6dc14b6f028ca89803ce048fa8c1')
-Investor = settrade.openapi.Investor(app_id="MDQfX4OjSGxTPqa", app_secret="BIhomc1bJN4XqCOyIW+OgVK9SqK4WwSJrhKqQjnGORA", broker_id="SANDBOX", app_code = "SANDBOX", is_auto_queue = False)
-equity = Investor.Equity(account_no="lamphu-E")
-realtime = Investor.RealtimeDataConnection()
+investor = Investor(app_id= app-id, app_secret = app-secret, broker_id = broker-id, app_code = app-code, is_auto_queue = False)
+equity = investor.Equity(account_no="lamphu-E")
+realtime = investor.RealtimeDataConnection()
 
 @app.route('/webhook', methods=['POST'])
 def callback():
