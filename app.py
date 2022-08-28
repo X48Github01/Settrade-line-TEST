@@ -38,7 +38,7 @@ lineaccesstoken = 'g3PgXzHxpK4ftUNiS4owBLoCfYd+QqQO5Tu8Ne1nuadrHOUDWRyDg2vtrtv0N
 line_bot_api = LineBotApi(lineaccesstoken)
 handler = WebhookHandler('314a6dc14b6f028ca89803ce048fa8c1')
 investor = Investor(app_id= app_id ,app_secret = app_secret, broker_id = broker_id, app_code = app_code, is_auto_queue = is_auto_queue)
-equity = investor.Equity(account_no="mixsoset-E")
+equity = investor.Equity(account_no="lamphu-E")
 realtime = investor.RealtimeDataConnection()
 
 @app.route('/webhook', methods=['POST'])
