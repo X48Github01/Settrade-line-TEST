@@ -5,6 +5,7 @@ import settrade.openapi
 import time
 import sys
 import linebot
+import os
 
 from flask import Flask, request, abort
 from settrade.openapi import Investor
@@ -20,10 +21,14 @@ from linebot.models import (
 )
 
 #[STT-OPENAPI-AUTH]
-app_id = "MDQfX4OjSGxTPqa"
-app_secret = "BIhomc1bJN4XqCOyIWOgVK9SqK4WwSJrhKqQjnGORA"
-app_code = "SANDBOX"
-broker_id = "SANDBOX"
+#app_id = "MDQfX4OjSGxTPqa"
+#app_secret = "BIhomc1bJN4XqCOyIW+OgVK9SqK4WwSJrhKqQjnGORA"
+#app_code = "SANDBOX"
+#broker_id = "SANDBOX"
+app_id = os.environ['STT-OPENAPI-AUTH-APP-ID'] 
+app_secret = os.environ['STT-OPENAPI-AUTH-APP-SECRET'] 
+app_code = os.environ['STT-OPENAPI-AUTH-APP-CODE'] 
+broker_id = os.environ['STT-OPENAPI-AUTH-BROKER-ID'] 
 is_auto_queue = False
 settrade.openapi.Investor(app_id, app_secret, broker_id, app_code, is_auto_queue)
 
