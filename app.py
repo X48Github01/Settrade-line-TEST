@@ -11,7 +11,7 @@ from linebot.models import (
     MessageEvent, PostbackEvent, TextMessage, TextSendMessage, FlexSendMessage, QuickReply, QuickReplyButton, MessageAction, PostbackAction
 )
 
-[STT-OPENAPI-AUTH]
+#[STT-OPENAPI-AUTH]
 app_id = "MDQfX4OjSGxTPqa"
 app_secret = "BIhomc1bJN4XqCOyIW+OgVK9SqK4WwSJrhKqQjnGORA"
 app_code = "SANDBOX"
