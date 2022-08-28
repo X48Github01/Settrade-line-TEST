@@ -2,7 +2,6 @@ import flask
 import requests
 import settrade.openapi
 import time
-import sync
 import linebot
 
 from flask import Flask, request, abort
