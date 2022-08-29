@@ -57,9 +57,9 @@ def hello_world():
 account_info = equity.get_account_info()
 sandbox_balance = equity.get_account_info()['cash_balance']
 print(account_info)
-print(-------------------------------------)
-print(-------------------------------------)
-print(-------------------------------------)
+print('-------------------------------------')
+print('-------------------------------------')
+print('-------------------------------------')
 print('balance wallet =', sandbox_balance)
 print(account_info_deri)
 #equity = investor.Equity(account_no="lamphu-E") For Original Teerasak
