@@ -42,6 +42,10 @@ investor = Investor(app_id= app_id ,app_secret = app_secret, app_code = app_code
 equity = investor.Equity(account_no="lamphu-E")
 realtime = investor.RealtimeDataConnection()
 
+@app.route("/")
+def hello_world():
+    return BOT_NAME + "God Trader X48 It's Here !!"
+
 @app.route('/webhook', methods=['POST'])
 def callback():
     # get X-Line-Signature header value
