@@ -31,6 +31,7 @@ app_secret = os.environ['STT-OPENAPI-AUTH-APP-SECRET']
 app_code = os.environ['STT-OPENAPI-AUTH-APP-CODE'] 
 broker_id = os.environ['STT-OPENAPI-AUTH-BROKER-ID'] 
 is_auto_queue = False
+USER_BOT = os.environ['USER_BOT'] 
 #settrade.openapi.Investor(app_id, app_secret, broker_id, app_code, is_auto_queue)
 
 app = Flask(__name__)
