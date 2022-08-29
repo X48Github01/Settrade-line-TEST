@@ -48,7 +48,7 @@ sandbox_balance = equity.get_account_info()['cash_balance']
 deri = investor.Derivatives(account_no="mixsoset-D")
 account_info_deri = deri.get_account_info()
 #equity = investor.Equity(account_no="lamphu-E") For Original Teerasak
-
+time.sleep(0.25)
 
 @app.route("/")
 def hello_world():
