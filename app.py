@@ -35,6 +35,8 @@ USER_BOT = os.environ['USER_BOT']
 BOT_NAME = os.environ['BOT_NAME'] 
 #settrade.openapi.Investor(app_id, app_secret, broker_id, app_code, is_auto_queue)
 
+sandbox_balance = 0
+
 app = Flask(__name__)
 
 lineaccesstoken = 'Jq7k9B7z8B8XiAF1d3RM6ArQxNVxIZSR/5ar1kZM/i4JifJASL4pEcLVQgxv+6/fVODlumGnQg4d7Z9bbTnWNopm+qG4W1sQ4lak8UImYc8kC/LnARaoClL9bm1UMW5PrCW6xcUOs3abtcleo7i1PgdB04t89/1O/w1cDnyilFU='
