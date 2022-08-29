@@ -64,7 +64,7 @@ def callback():
 
     return 'OK'
 
-print("Bot 2in1 Start = My Account Name Is : >>",USER_BOT)
+print("Line Settrade API Start = My Account Name Is : >>",USER_BOT)
 print("---------------------------------------------------------------------------------")
 print("██   ██ ██   ██  █████   ██ ███████  ██  ██████  ██████  ██████  ██   ██ ██████ ") 
 print(" ██ ██  ██   ██ ██   ██ ███ ██      ███ ██            ██      ██ ██   ██      ██") 
