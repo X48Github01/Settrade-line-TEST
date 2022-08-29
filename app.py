@@ -49,9 +49,9 @@ print(-------------------------------------)
 print(-------------------------------------)
 print(-------------------------------------)
 print('balance wallet =', sandbox_balance)
-#deri = investor.Derivatives(account_no="mixsoset-D")
-#account_info_deri = deri.get_account_info()
-#print(account_info_deri)
+deri = investor.Derivatives(account_no="mixsoset-D")
+account_info_deri = deri.get_account_info()
+print(account_info_deri)
 #equity = investor.Equity(account_no="lamphu-E") For Original Teerasak
 realtime = investor.RealtimeDataConnection()
 
