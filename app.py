@@ -19,8 +19,7 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, PostbackEvent, TextMessage, TextSendMessage, FlexSendMessage, QuickReply, QuickReplyButton, MessageAction, PostbackAction
 )
-#X48 Sett id : HYnH7Rex0Er1O1Cp
-#X48 Sett Se : AOxpRrBuLzH2M29wQ2BxcxyfC+Zgq91rQd3wPIBPTL29
+
 #[STT-OPENAPI-AUTH]
 #app_id = "MDQfX4OjSGxTPqa"
 #app_secret = "BIhomc1bJN4XqCOyIW+OgVK9SqK4WwSJrhKqQjnGORA"
@@ -44,11 +43,8 @@ line_bot_api = LineBotApi(lineaccesstoken)
 handler = WebhookHandler('314a6dc14b6f028ca89803ce048fa8c1')
 investor = Investor(app_id= app_id ,app_secret = app_secret, app_code = app_code, broker_id = broker_id, is_auto_queue = is_auto_queue)
 realtime = investor.RealtimeDataConnection()
-#equity = investor.Equity(account_no="mixsoset-E")
 equity = investor.Equity(account_no="lamphu-E") #For Original Teerasak
 account_info = equity.get_account_info()
-#sandbox_balance = float(equity.get_account_info()['cash_balance'])
-#deri = investor.Derivatives(account_no="mixsoset-D")
 deri = investor.Derivatives(account_no="lamphu-D")
 account_info_deri = deri.get_account_info()
 
@@ -59,14 +55,11 @@ def hello_world():
     return BOT_NAME + "God Trader X48 It's Here !!"
 
 account_info = equity.get_account_info()
-#sandbox_balance = float(equity.get_account_info()['cash_balance'])
 print(account_info)
 print('-------------------------------------')
 print('-------------------------------------')
 print('-------------------------------------')
-#print('balance wallet =', sandbox_balance)
 print(account_info_deri)
-#equity = investor.Equity(account_no="lamphu-E") For Original Teerasak
 
 @app.route('/webhook', methods=['POST'])
 def callback():
