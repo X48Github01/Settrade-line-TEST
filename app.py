@@ -19,7 +19,8 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, PostbackEvent, TextMessage, TextSendMessage, FlexSendMessage, QuickReply, QuickReplyButton, MessageAction, PostbackAction
 )
-
+#X48 Sett id : HYnH7Rex0Er1O1Cp
+#X48 Sett Se : AOxpRrBuLzH2M29wQ2BxcxyfC+Zgq91rQd3wPIBPTL29
 #[STT-OPENAPI-AUTH]
 #app_id = "MDQfX4OjSGxTPqa"
 #app_secret = "BIhomc1bJN4XqCOyIW+OgVK9SqK4WwSJrhKqQjnGORA"
