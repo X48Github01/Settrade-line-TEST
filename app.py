@@ -34,15 +34,18 @@ is_auto_queue = False
 USER_BOT = os.environ['USER_BOT'] 
 #settrade.openapi.Investor(app_id, app_secret, broker_id, app_code, is_auto_queue)
 
+environment=uat
+clear_log=30
+
 app = Flask(__name__)
 
 lineaccesstoken = 'Jq7k9B7z8B8XiAF1d3RM6ArQxNVxIZSR/5ar1kZM/i4JifJASL4pEcLVQgxv+6/fVODlumGnQg4d7Z9bbTnWNopm+qG4W1sQ4lak8UImYc8kC/LnARaoClL9bm1UMW5PrCW6xcUOs3abtcleo7i1PgdB04t89/1O/w1cDnyilFU='
 line_bot_api = LineBotApi(lineaccesstoken)
 handler = WebhookHandler('314a6dc14b6f028ca89803ce048fa8c1')
 investor = Investor(app_id= app_id ,app_secret = app_secret, app_code = app_code, broker_id = broker_id, is_auto_queue = is_auto_queue)
-equity = investor.Equity(account_no="mixsoset-E")
+#equity = investor.Equity(account_no="mixsoset-E")
 #equity = investor.Equity(account_no="lamphu-E") For Original Teerasak
-realtime = investor.RealtimeDataConnection()
+#realtime = investor.RealtimeDataConnection()
 
 @app.route("/")
 def hello_world():
