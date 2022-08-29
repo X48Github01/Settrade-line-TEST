@@ -46,7 +46,7 @@ investor = Investor(app_id= app_id ,app_secret = app_secret, app_code = app_code
 realtime = investor.RealtimeDataConnection()
 equity = investor.Equity(account_no="mixsoset-E")
 account_info = equity.get_account_info()
-#sandbox_balance = float(equity.get_account_info()['cash_balance'])
+sandbox_balance = float(equity.get_account_info()['cash_balance'])
 deri = investor.Derivatives(account_no="mixsoset-D")
 account_info_deri = deri.get_account_info()
 #equity = investor.Equity(account_no="lamphu-E") For Original Teerasak
@@ -57,7 +57,7 @@ def hello_world():
     return BOT_NAME + "God Trader X48 It's Here !!"
 
 account_info = equity.get_account_info()
-sandbox_balance = equity.get_account_info()['cash_balance']
+sandbox_balance = float(equity.get_account_info()['cash_balance'])
 print(account_info)
 print('-------------------------------------')
 print('-------------------------------------')
